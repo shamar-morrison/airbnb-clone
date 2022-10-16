@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className='flex justify-between flex-wrap sm:gap-32'>
+    <footer className='flex flex-wrap justify-between gap-[30px]'>
       <ul className='space-y-4 tex-sm text-gray-800'>
         <li className='font-bold'>
           <h5>ABOUT</h5>

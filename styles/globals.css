@@ -8,3 +8,8 @@ html {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
 }
+
+::selection {
+  background-color: #FF385C;
+  color: #fff;
+} 
