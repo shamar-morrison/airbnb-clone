@@ -1,8 +1,6 @@
-import React from 'react';
-
 export default function Footer() {
   return (
-    <footer className='flex flex-wrap justify-between gap-[30px]'>
+    <div className='flex flex-wrap justify-between gap-[30px] px-32 py-14 bg-gray-100 text-gray-600'>
       <ul className='space-y-4 tex-sm text-gray-800'>
         <li className='font-bold'>
           <h5>ABOUT</h5>
@@ -23,7 +21,6 @@ export default function Footer() {
           <a href='#'>Airbnb Luxe</a>
         </li>
       </ul>
-
       <ul className='space-y-4 tex-sm text-gray-800'>
         <li className='font-bold'>
           <h5>CONTACT</h5>
@@ -44,7 +41,6 @@ export default function Footer() {
           <a href='#'>Travel Exclusively</a>
         </li>
       </ul>
-
       <ul className='space-y-4 tex-sm text-gray-800'>
         <li className='font-bold'>
           <h5>TERMS OF USE</h5>
@@ -65,7 +61,6 @@ export default function Footer() {
           <a href='#'>Corporate Website</a>
         </li>
       </ul>
-
       <ul className='space-y-4 tex-sm text-gray-800'>
         <li className='font-bold'>
           <h5>SUPPORT</h5>
@@ -86,6 +81,6 @@ export default function Footer() {
           <a href='#'>Luxe Gallery</a>
         </li>
       </ul>
-    </footer>
+    </div>
   );
 }
