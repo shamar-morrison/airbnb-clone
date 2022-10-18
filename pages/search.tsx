@@ -1,6 +1,7 @@
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import InfoCard from 'components/InfoCard';
+import Map from 'components/Map';
 import { format } from 'date-fns';
 import { useRouter } from 'next/router';
 
@@ -37,7 +38,7 @@ export default function Search({ data }: Props) {
       <main className='flex'>
         <section className='flex-grow pt-14 px-6'>
           <p className='text-sm'>
-            300+ Stays for {numberOfGuests} guests from {range}
+            300+ Stays for {numberOfGuests} guest(s) from {range}
           </p>
           <h1 className='text-3xl font-semibold mt-2 mb-6'>Stays in {location}</h1>
 
@@ -49,9 +50,11 @@ export default function Search({ data }: Props) {
             <button className='btn'>Highly Rated</button>
           </div>
 
-          {data?.map(item => (
-            <InfoCard key={item.img} {...item} />
-          ))}
+          <div className='flex flex-col'>
+            {data?.map(item => (
+              <InfoCard key={item.img} {...item} />
+            ))}
+          </div>
         </section>
       </main>
 

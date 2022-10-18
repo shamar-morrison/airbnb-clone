@@ -47,6 +47,9 @@ const Header = ({ placeholder }: Props) => {
   function searchOnKeyPress(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === 'Enter') {
       search();
+      setTimeout(() => {
+        setSearchInput('');
+      }, 300);
     }
   }
 
