@@ -1,7 +1,6 @@
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import InfoCard from 'components/InfoCard';
-import Map from 'components/Map';
 import { format } from 'date-fns';
 import { useRouter } from 'next/router';
 
@@ -25,8 +24,8 @@ export default function Search({ data }: Props) {
   const router = useRouter();
   const { location, startDate, endDate, numberOfGuests } = router.query;
 
-  const formattedStartDate = format(new Date(startDate), 'MMMM dd');
-  const formattedEndDate = format(new Date(endDate), 'MMMM dd');
+  const formattedStartDate = format(new Date(startDate as string), 'MMMM dd');
+  const formattedEndDate = format(new Date(endDate as string), 'MMMM dd');
   const range = `${formattedStartDate} - ${formattedEndDate}`;
 
   const searchInput = `Stay in ${location} from ${range} - ${numberOfGuests} guest(s)`;
